@@ -1,0 +1,8 @@
+body{
+  /* background: linear-gradient(135deg, #a15255 0%, #fad0c4 100%);
+   */
+   background-color: rgba(151, 76, 221, 0.371);
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
