@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק טריוויה</title>
+    <script defer src="js/memoryGame.js"></script>
+    <link rel="stylesheet" href="css/memoryGame.css">
+    <!-- <link rel="stylesheet" href="css/headerFooter.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<header>
+    <div class="head">
+        <h2>ניקוד: <span id="score">0</span></h2>
+        <h2>שחקן: <span id="playerName">שם השחקן</span></h2>
+        <h2>תשובות נכונות: <span id="correctAnswers">0</span></h2>
+        <h2>תשובות שגויות: <span id="wrongAnswers">0</span></h2>
+        <h2>זמן שנותר: <span id="timer">10</span> שניות</h2>
+        <button id="scoreboardButton" onclick="location.href='scoreboard.html'">לוח תוצאות</button>
+    </div>
+</header>
+<body>
+    <div class="card">
+        <h1>אנא סמן את התשובה הנכונה</h1>
+        <div id="quizDiv">
+        </div>
+</body>
+<footer>
+    <p>כל הזכויות שמורות ל"טריוויה הטכנולוגית" © 2025</p>
+</footer>
+
+</html>
