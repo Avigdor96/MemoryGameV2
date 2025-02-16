@@ -1,6 +1,5 @@
 header, footer{
     width: 99%;
-    /* background: linear-gradient(135deg, #100f10 10%,#814075 90%); */
     background: linear-gradient(135deg, #bb60bb 10%,#412175 90%);
     color: white;
     display: flex;
@@ -10,6 +9,7 @@ header, footer{
     border-radius: 30px;
     position: fixed;
   }
+  
   header {
     top: 5px;
     height: 60px;

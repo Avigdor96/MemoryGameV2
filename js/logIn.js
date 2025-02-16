@@ -21,6 +21,8 @@ function showLoginForm() {
         if (result.isConfirmed) {
             if (users[result.value.userName] && users[result.value.userName].pass === result.value.password) {
                 Swal.fire('התחברת בהצלחה!', '', 'success');
+                localStorage.setItem("currentUser", result.value.userName);
+                window.location.href = 'memoryGame.html'
             }
             else{
                 Swal.fire('!משתמש לא רשום נא בצע הרשמה', '', 'error')
@@ -59,8 +61,9 @@ function showSignUpForm() {
             let newUser = { name: result.value.userName, pass: result.value.password, score: 0, correct: 0, uncorrect: 0 }
             users[result.value.userName] = newUser
             localStorage.setItem("users", JSON.stringify(users))
-
+            localStorage.setItem("currentUser", result.value.userName);
             Swal.fire('התחברת בהצלחה!', '', 'sucsses');
+            window.location.href = 'memoryGame.html'
         }
     });
 }

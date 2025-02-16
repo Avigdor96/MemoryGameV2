@@ -8,17 +8,19 @@
     <script defer src="js/memoryGame.js"></script>
     <link rel="stylesheet" href="css/memoryGame.css">
     <!-- <link rel="stylesheet" href="css/headerFooter.css"> -->
+     <script defer src="js/memoryGame.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <header>
     <div class="head">
-        <h2>ניקוד: <span id="score">0</span></h2>
         <h2>שחקן: <span id="playerName">שם השחקן</span></h2>
+        <h2>ניקוד: <span id="score">0</span></h2>
         <h2>תשובות נכונות: <span id="correctAnswers">0</span></h2>
         <h2>תשובות שגויות: <span id="wrongAnswers">0</span></h2>
         <h2>זמן שנותר: <span id="timer">10</span> שניות</h2>
         <button id="scoreboardButton" onclick="location.href='scoreboard.html'">לוח תוצאות</button>
+        <button id="scoreboardButton" onclick="location.href='logIn.html'">משחק חדש</button>
     </div>
 </header>
 <body>
@@ -28,7 +30,7 @@
         </div>
 </body>
 <footer>
-    <p>כל הזכויות שמורות ל"טריוויה הטכנולוגית" © 2025</p>
+    <p id="p_foot">כל הזכויות שמורות ל"טריוויה הטכנולוגית" © 2025</p>
 </footer>
 
 </html>
